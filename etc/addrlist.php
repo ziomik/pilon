@@ -3,7 +3,7 @@
 // Sets $addrlist with the contents of addrlist.json as an array
 // If that doesn't work out, it returns an error
 
-$addrlist = @json_decode(@file_get_contents('/home/pi/etc/addrlist.json'),true);
+$addrlist = @json_decode(@file_get_contents('/home/pi/lon/etc/addrlist.json'),true);
 
 if(empty($addrlist)){
   echo "Corrupt addrlist";
